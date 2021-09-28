@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<!--Sempre começar com doctype, pois alguns navegadores podem não sacar.-->
+<!--Sempre iniciar com a formatação <html> <head> <body> como abaixo-->
+<!--Basta colocar ! e o VSC já escreve todo esse início.-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="Rafael Eberhrdt">
+        <meta name="description" content="A site for learning how to develope.">
+
+        <link rel="icon" type="image/png" href="https://example.com/favicon.png"/>
+
+        <link rel="stylesheet" href="../static/style.css">
+
+        <title>Site do Rafa</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poiret+One&family=Press+Start+2P&display=swap" rel="stylesheet">
+
+    </head>
+
+    <body>
+
+        <script src="../static/script0.js"></script>
+
+        <div class="container">
+
+            <div class="item item-a">
+                <h1 id="Top"> Aprendendo HTML </h1>
+            </div>
+            
+            <div class="item item-b">
+
+                <h2>Conteúdos</h2>
+
+                <ul>
+                    <li>
+                        <a href="#Paragraphs" title="Ir para Parágrafos">Parágrafos</a>
+                    </li>
+                    <li>
+                        <a href="#Lists" title="Ir para Listas"> Listas</a>
+                    <ul>
+                    <li>
+                            <a href="#worder" title="Ir para Listas Ordenadas">Com Ordenação</a>
+                    </li> 
+                    <li>
+                            <a href="#woorder" title="Ir para Listas Não Ordenadas">Sem Ordenação</a>
+                    </li>
+                    </ul>
+                    </li>
+
+                    <li>
+                        <a href="#Images" title="Ir para Imagens">Imagens</a>
+                    </li>
+
+                    <li> 
+                        <a href="#Tables" title="Ir para Tabelas">Tabelas</a>
+                    </li>
+                </ul>
+
+            </div>
+            
+
+
+            <div class="item item-c">
+
+                <h2 id="Paragraphs">Parágrafos</h2>
+
+                <p> Este é um <strong>parágrafo</strong> </p>
+                
+                <p>Para <em>saber mais</em>, clique em <a href="https://google.com" title="Redirecionar para Google"> <h3>Google</h3> </a></p>
+
+                <h2 id="Lists"> Listas</h2>
+
+                <h3 id="worder">Com ordenação</h3>
+
+                <ol>
+                    <li> teste </li>
+                    <li>testando</li>
+                </ol>
+
+
+                <h3 id="woorder">Sem ordenação</h3>
+
+                <ul>
+                    <li>Teste</li>
+                    <li>Testando</li>
+                </ul>
+                
+                <h2 class="item Images"> Imagens</h2>
+
+                <p>Testando uma outra página:</p>
+
+                <a href="./Files/images.html" title="Images"> Imagens. </a>
+
+            </div>
+
+            <div class="item item-d">
+                <h2 id="Tables"> Tabelas </h2>
+
+                <table style="text-align:center; vertical-align: middle;">
+            
+                    <caption id="tab1">Tabela de clientes </caption>
+
+                    <thead>
+                        <tr>
+                            <th> Nome </th>
+                            <th>Idade </th>
+                        </tr>
+                    </thead>
+            
+                    <tbody>
+                        <tr> 
+                            <td> A </td>
+                            <td> 18 </td>
+                        </tr>
+
+                        <tr>
+                            <td> B </td>
+                            <td> 21 </td>        
+                        </tr>        
+
+                    </tbody>
+
+                    <tfoot>
+                    <tr>
+                        <td>
+                            <strong> Total: </strong> 
+                        </td>
+                        <td> Somatório que não sei fazer ainda.   </td>
+                    </tr>
+                    </tfoot>
+            
+            </table>
+
+
+            <table style="text-align: center; vertical-align: middle;">
+
+                <caption id="tabcomplex">Tabela complexa </caption>   
+
+                <thead>
+                    <tr>
+                        <th rowspan="2"></th>
+                        <th colspan="2">A</th>
+                        <th colspan="2">B</th>
+                        <th></th>
+                    </tr>
+
+                    <th>Teste</th>
+                    <th>Testando</th>
+                    <th>Teste</th>
+                    <th>Testando</th>
+                </thead>
+            
+                <tbody>
+                    <tr>
+                        <th>Panela</th>
+                        <td>10</td>
+                        <td>20</td>
+                        <td>5</td>
+                        <td>15</td>
+                    </tr>
+
+                    <tr>
+                        <th>chinelo</th>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>5</td>
+                    </tr>
+                </tbody>
+
+                    <tfoot>
+                        <tr>
+                            <th>Total</th>
+                            <td colspan="2">Soma1</td>
+                            <td colspan="2">Soma2</td>
+                        </tr>
+                    </tfoot>
+
+                </table>
+
+            </div>
+
+            <div class="item item-e">
+                <button type="button" id="button">
+                    <a href="#Top" title="Voltar para o topo">Topo</a>    
+                </button>
+            </div>
+
+
+            <div class="item item-f">
+                <address>
+                    <p>Rafael Eberhardt<br>
+                        <em>Porto Alegre</em>, RS.
+                    </p>
+                </address>
+            </div>
+
+        </div>
+
+        
+
+
+    </body>
+</html>
+
+
+
+
+

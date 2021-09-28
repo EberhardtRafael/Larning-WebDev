@@ -1,0 +1,171 @@
+:root{
+    --text-color: #FFF5E7;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 100px 200px 500px 20px 50px;
+    grid-template-areas: 
+        "header header"
+        "conteudos ."
+        "paragrafos tabelas"        
+        "botao ."
+        "footer ."
+    ;
+}
+
+
+.item-a{
+    grid-area: header;
+    /*grid-column-start: 4;
+    grid-column-end: auto;
+    grid-row-start: auto;
+    grid-row-end:  auto;
+    justify-self: center;*/
+}  
+
+.item-b{
+    grid-area: conteudos;
+}
+
+.item-c{
+    grid-area: paragrafos;
+}
+
+.item-d{
+    grid-area: tabelas;
+}
+
+.item-e{
+    grid-area: botao;
+}
+
+.item-f{
+    grid-area: footer;
+}
+
+
+body{
+
+    background-image: url(../templates/Files/NGC4921_HubbleShatz_960.jpg);
+    background-size: cover;
+}
+
+h1{
+    text-align: center;
+    color: var(--text-color);
+    font-size: 30px;
+    font-family: 'Press Start 2P';
+    border: 5px rgb(139, 104, 0, 0.1) solid;
+    background-color: rgb(139, 104, 0, 0.2);
+}
+
+h2{
+    text-align: center;
+    color: var(--text-color);
+    font-family: 'Press Start 2P', cursive;
+}
+
+h3{
+    text-align: center;
+    color: var(--text-color);
+    font-family: 'Press Start 2P', cursive;
+}
+
+p{
+    text-align: center;
+    color: var(--text-color);
+    font-family:'Press Start 2P', cursive;
+}
+
+div{
+    text-align: center;
+    color: var(--text-color);
+    font-family: 'Press Start 2P', cursive;
+}
+
+#tabelas{
+    align-self: center;
+    text-align: center;
+    animation-duration: 0.8s;
+    animation-name: bla;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+li{
+    color: var(--text-color);
+    list-style: none;
+    font-family: 'Press Start 2P', cursive;
+}
+
+table{
+    align-self: right;
+    color: var(--text-color);
+    background-color: rgb(139, 104, 0, 0.2);
+    font-family: 'Press Start 2P', cursive;
+}
+
+#tab1{
+    align-self: center;
+    background-color: rgb(139, 104, 0, 0.5);
+    font-family: 'Press Start 2P', cursive;
+}
+
+
+@keyframes bla{
+    from{
+        /*margin-left: 30%;
+        width: 300%;*/
+        font-size: 100%;
+    }
+
+    /*95% {
+        font-size: 120%;
+        margin-left: 0%;
+        width: 150%;
+      }*/
+    
+
+    to{
+        /*margin-left: 0%;
+        width: 100%;*/
+        font-size: 110%;
+    }
+
+}
+
+#tabcomplex{
+    align-self: center;
+    background-color: rgb(139, 104, 0, 0.5);
+    font-family: 'Press Start 2P', cursive;
+}
+
+#button{
+    font-family: 'Press Start 2P', cursive;
+}
+
+a{
+    font-family: 'Press Start 2P', cursive;
+}
+
+/*Unvisited link*/
+a:link {
+    color: var(--text-color);
+}
+  
+  /*Visited link*/
+a:visited {
+    color: rgba(139, 104, 0, 0.5);
+}
+  
+  /* mouse over link */
+a:hover {
+    color: #FF9200;
+}
+  
+  /* selected link */
+a:active {
+    color: #F5F4F4;
+}
